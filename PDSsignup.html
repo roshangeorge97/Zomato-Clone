@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./assets/css/signup2style.css">
+
+</head>
+
+<body>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event ,this, 'Buisness')">Business</button>
+        <div class="vr" style="margin-left:6rem; height:2rem; border-left: 2px solid gray ; "></div>
+        <button class="tablinks" onclick="openTab(event ,this, 'Customer')">Customer</button>
+    </div>
+
+    <div class="form-container" id="Customer">
+
+        <form action="" method="post" validate>
+            <h3>Sign Up</h3>
+            <input type="text" name="name" placeholder="enter your first name" required class="box">
+            <input type="text" name="name" placeholder="enter your last name" required class="box">
+            <input type="email" name="email" placeholder="enter your email" required class="box">
+            <input type="text" name="number" placeholder="enter phone number" required class="box">
+            <input type="submit" name="submit" value="signup" class="btn" onclick="validate()">
+        </form>
+
+    </div>
+
+    <div class="form-container" id="Buisness">
+
+        <form action="" method="post" validate>
+            <h3>Sign Up</h3>
+            <input type="text" name="name" placeholder="enter your first name" required class="box">
+            <input type="text" name="name" placeholder="enter your last name" required class="box">
+            <input type="email" name="email" placeholder="enter your email" required class="box">
+            <input type="text" name="number" placeholder="enter phone number" required class="box">
+            <input type="text" name="type" placeholder="enter Restaurant type" required class="box">
+            <textarea rows="3" column="4" name="location" placeholder="enter location" required class="box"></textarea>
+            <input type="submit" name="submit" value="signup" class="btn" onclick="validate()">
+        </form>
+
+    </div>
+
+    <script>
+        function validate() {
+            let x = document.forms["form"]["phone"].value;
+            if (x.length != 10) {
+                alert("Invalid Phone no.");
+                return false;
+            }
+        }
+
+        function openTab(evt, elemnt, formName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("form-container");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(formName).style.display = "block";
+            evt.currentTarget.className += "active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>

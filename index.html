@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LANDING PAGE</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="content">Scroll &darr;</div>
+<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+<script>if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+        backToTop = function () {
+            var scrollTop = $(window).scrollTop();
+            if (scrollTop > scrollTrigger) {
+                $('#back-to-top').addClass('show');
+            } else {
+                $('#back-to-top').removeClass('show');
+            }
+        };
+    backToTop();
+    $(window).on('scroll', function () {
+        backToTop();
+    });
+    $('#back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 700);
+    });
+}</script>
+    <nav class="nav-main"  data-spy="affix" data-offset-top="197">
+        <div class="navbar-right" >
+        <a href="./addrestaurant.html"><button>Add Restaurant</button></a>
+        <a href="./login.html"><button>Login</button></a>
+        <a href="./PDSsignup.html"><button>Sign Up</button></a>
+    </div>
+        </nav>
+         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('.navbar-right').click(function(){
+                    $('.navbar-right').toggleClass('active');
+                    $('nav').toggleClass('active');
+                })
+            })
+        </script>
+    <!--SEARCH BAR-->
+
+    <section class="hero_image">
+        <div class="hero_wrapper">
+            <h1><b>The Food You Love</b></h1>
+            <p><b>Discover Best Food & Drinks Near You Now!</b></p>
+            <form class="form_code">
+                <input class="post_code" type="text" placeholder="Search For Restaurants & Food">
+                <button type="submit"><b>Find Food</b></button>
+            </form>
+        </div>
+    </section>
+
+        <!--ORDER NOW-->
+        
+
+       <section class="speciality" id="speciality">
+           
+    <h1 class="heading"><B><span>ORDER</span> NOW</B> </h1>
+
+<div class="box-container">
+        
+                <div class="box">
+                    <img class="image" src="./assets/images/s-img-1.jpg" alt="">
+                    <div class="content">
+                        <img src="./assets/images/s-1.png" alt="">
+                        <h3>Classic Burger</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="./assets/images/s-img-2.jpg" alt="">
+                    <div class="content">
+                        <img src="./assets/images/s-2.png" alt="">
+                        <h3>Pizza Mania</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="./assets/images/s-img-3.jpg" alt="">
+                    <div class="content">
+                        <img src="./assets/images/s-3.png" alt="">
+                        <h3>Scoopy Spoon</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="./assets/images/s-img-4.jpg" alt="">
+                    <div class="content">
+                        <img src="./assets/images/s-4.png" alt="">
+                        <h3>Exotic Drinks</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="./assets/images/s-img-5.jpg" alt="">
+                    <div class="content">
+                        <img src="./assets/images/s-5.png" alt="">
+                        <h3>Trendy Sweets</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="./assets/images/s-img-6.jpg" alt="">
+                    <div class="content">
+                        <img src="./assets/images/s-6.png" alt="">
+                        <h3>Healthy Morning</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
+                    </div>
+                </div>
+        
+            </div>
+        
+        </section> 
+        
+        <!-- speciality section ends -->
+        
+        <!-- popular section starts  -->
+        
+
+        <!--POPULAR PLACES-->
+
+
+  <div class="wrapper_menu">
+	<h3 style="margin-left: 70px;">Popular localities in and around Delhi NCR</h3>
+	<h5 style="color:gray;font-size:16px;margin-left: 70px;font-weight: normal; margin-bottom: -50px;">Explore restaurants, bars, and cafés by locality</h5>
+
+<div class="container places">
+	<div class="row" >
+		<div class="col-md-3 col-sm-2">
+			<ul class="places_1">
+				<li><a href="#">Connaught Place</a> <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Rajouri Garden <a href="#" style="color: gray">(351 places)</a></li>
+				<li><a href="#">Golf Course Road <a href="#" style="color: gray"> (194 places)</a></li>
+				<li><a href="#">Indirapuram <a href="#" style="color: gray"> (439 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray"> (313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray"> (313 places)</a></li>
+				<li><a href="#">Connaught Place<a href="#" style="color: gray"> (313 places)</a></li>
+				<li><a href="#">Connaught Place<a href="#" style="color: gray"> (313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+			</ul>
+		</div>
+			<div class="col-md-3 col-sm-2">
+			<ul class="places_2">
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Rajouri Garden <a href="#" style="color: gray">(351 places)</a></li>
+				<li><a href="#">Golf Course Road <a href="#" style="color: gray">(194 places)</a></li>
+				<li><a href="#">Indirapuram <a href="#" style="color: gray">(439 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+			</ul>
+		</div>
+			<div class="col-md-3 col-sm-2">
+			<ul class="places_3">
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Rajouri Garden <a href="#" style="color: gray">(351 places)</a></li>
+				<li><a href="#">Golf Course Road <a href="#" style="color: gray">(194 places)</a></li>
+				<li><a href="#">Indirapuram <a href="#" style="color: gray">(439 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray"> (313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+				<li><a href="#">Connaught Place <a href="#" style="color: gray">(313 places)</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+    <!--COLLECTION-->
+
+
+
+    <section class="middle">
+        <div class="sec-2">
+            
+            <h2>Collections</h2>
+            <div class="explore">
+                <h4>
+                    Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi, based on trends
+                </h4>
+                <span>All collections in Delhi NCR &nbsp;<i class="fas fa-caret-right"></i></span>
+            </div>
+            </div>
+            <div class = "sec-3">
+                <div class ="box-1">
+                    <div><span>Newly Opened<br> 17 places </span><i class="fas fa-caret-right"></i></div>
+                    <img src ="https://images.adsttc.com/media/images/6213/6121/b0be/7001/64e1/45ef/newsletter/ts-motherbkk-03.jpg?1645437241">
+                </div>
+                <div class ="box-1">
+                    <div><span>Trending This Week<br> 30 places </span><i class="fas fa-caret-right"></i></div>
+                    <img src ="https://www.wallacecollection.org/media/images/The_Wallace_Waldorf_salad_herb_and_yoghurt_dr.width-2000.jpg"height="200">
+                </div>
+                <div class ="box-1">
+                    <div><span>Best of Delhi NCR<br> 155 places </span><i class="fas fa-caret-right"></i></div>
+                    <img src ="https://b.zmtcdn.com/data/pictures/1/18349771/3ccd922ce13419c0727fe653cad1b703.jpg?fit=around|318.75:231.25&crop=318.75:231.25;*,*"height="200">
+                </div>
+                <div class ="box-1">
+                    <div><span>Great Cafes<br> 30 places </span><i class="fas fa-caret-right"></i></div>
+                    <img src ="https://d4t7t8y8xqo0t.cloudfront.net/resized/750X436/eazytrendz%2F2928%2Ftrend20200901144420.jpg"height="200">
+                </div> 
+
+            </div>
+            
+        </div>
+        
+    </section>
+
+     <!--FOOTER-->
+
+
+    <footer class="footer">
+        <div  class="container">
+            <div class="frow">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#"> our service</a></li>
+                        <li><a href="#">privacy </a></li>
+                        <li><a href="#">security</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">SHIPPING</a></li>
+                        <li><a href="#">ORDER STATUS</a></li>
+                        <li><a href="#">PAYMENT</a></li>
+                    </ul>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+               
+        </div>
+       
+            <!--COPYRIGHT-->
+
+
+    </div>
+    
+    <HR>
+          <p class="copyright"> 
+            Prabhani Food Zone @ 202
+            </p>
+        </footer>
+        <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+            var element=document.querySelector(".fas");
+            if(element.classList.contains('fa-rotate-180')){
+                element.classList.remove('fa-rotate-180');
+            }else{
+                element.classList.add('fa-rotate-180');
+            }
+          }
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+        }
+    </script>
+</body>

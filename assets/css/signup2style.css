@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root {
+    --purple: #8e44ad;
+    --red: #c0392b;
+    --orange: #f39c12;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-white: #ccc;
+    --light-bg: #f5f5f5;
+    --border: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+
+.message {
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    gap: 1.5rem;
+}
+
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 4rem;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover {
+    background-color: var(--black);
+}
+
+.white-btn,
+.btn {
+    background-color: var(--purple);
+}
+
+.option-btn {
+    background-color: var(--orange);
+}
+
+.delete-btn {
+    background-color: var(--red);
+}
+
+.white-btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.heading h3 {
+    font-size: 5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.heading p {
+    font-size: 2.5rem;
+    color: var(--light-color);
+}
+
+.heading p a {
+    color: var(--purple);
+}
+
+.heading p a:hover {
+    text-decoration: underline;
+}
+
+
+
+.form-container {
+    min-height: 100vh;
+    /* background-color: var(--light-bg); */
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 10rem 15rem 50rem ;
+    position: absolute;
+}
+
+.form-container form {
+    padding: 2rem;
+    width: 50rem;
+    border-radius: .5rem;
+    background-color: rgb(231, 220, 240) ;
+    text-align: center;
+    position: absolute;
+    box-shadow : 5px 5px 5px 2px #c11c69 ;
+}
+
+
+.form-container form h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.form-container form .box {
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: var(--border);
+    margin: 1rem 0;
+}
+
+.form-container form p {
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.form-container form p a {
+    color: var(--purple);
+}
+
+.form-container form p a:hover {
+    text-decoration: underline;
+}
+
+.tab {
+    
+    background-color: #f1f1f1;
+    text-align: center;
+    margin-top: 5rem;
+    display: inline-flex;
+    width: 50rem;
+    margin-left: 50rem;
+    justify-items: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow : 5px 5px 5px 2px #c11c69 ;
+
+}
+.tablinks{
+    cursor: pointer;
+    text-indent: -15px ;
+  }
+ 
+
+.tab button {
+    /* background-color: inherit; */
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    margin-left: 9rem;
+}    
+
+.tab button:hover {
+    background-color: #D9CED6;
+    transition: 0.5s;
+    font-size: 2em;
+    
+}
+
+.tab button:active {
+    background-color: #ccc;
+}
+
+.tablinks.active{
+    background-color: #8e44ad;
+}
+
+body {
+    display: inline-block;
+    background-image: url("https://i0.wp.com/www.myberryforest.com/wp-content/uploads/2017/06/Magical-Fruit-Mocktails.jpg?ssl=1");
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+    background-size: cover;
+    /* background-image: url() ; */
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////
+//////////////////////// */
+
+@media only screen and (max-width: 395px) {
+    * {
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        transition: all .2s linear;
+    }
+    
+    
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+    
+    
+    
+    .message {
+        position: sticky;
+        top: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+        background-color: var(--white);
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 10000;
+        gap: 1.5rem;
+    }
+    
+    
+    .title {
+        text-align: center;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        color: var(--black);
+        font-size: 4rem;
+    }
+    
+    .btn,
+    .option-btn,
+    .delete-btn,
+    .white-btn {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        color: var(--white);
+        font-size: 1.8rem;
+        border-radius: .5rem;
+        text-transform: capitalize;
+    }
+    
+    .btn:hover,
+    .option-btn:hover,
+    .delete-btn:hover {
+        background-color: var(--black);
+    }
+    
+    .white-btn,
+    .btn {
+        background-color: var(--purple);
+    }
+    
+    .option-btn {
+        background-color: var(--orange);
+    }
+    
+    .delete-btn {
+        background-color: var(--red);
+    }
+    
+    .white-btn:hover {
+        background-color: var(--white);
+        color: var(--black);
+    }
+    
+    .heading h3 {
+        font-size: 5rem;
+        color: var(--black);
+        text-transform: uppercase;
+    }
+    
+    .heading p {
+        font-size: 2.5rem;
+        color: var(--light-color);
+    }
+    
+    .heading p a {
+        color: var(--purple);
+    }
+    
+    .heading p a:hover {
+        text-decoration: underline;
+    }
+    
+    
+    
+    .form-container {
+        min-height: 100vh;
+        /* background-color: var(--light-bg); */
+        display: block;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 100px 15px 200px ;
+        position: fixed;
+        margin-left: -8vh ;
+        
+    }
+    
+    .form-container form {
+        /* padding: 2vh ; */
+        margin-left: 5px;
+        width: 50rem;
+        border-radius: .5rem;
+        background-color: rgb(231, 220, 240) ;
+        text-align: center;
+        /* position: absolute; */
+        box-shadow : 5px 5px 5px 2px #c11c69 ;
+        /* margin: 5px 20px 0px 0px; */
+
+    }
+    
+    
+    .form-container form h3 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        color: var(--black);
+    }
+    
+    .form-container form .box {
+        width: 100%;
+        border-radius: .5rem;
+        background-color: var(--light-bg);
+        padding: 1.2rem 1.4rem;
+        font-size: 1.8rem;
+        color: var(--black);
+        border: var(--border);
+        margin: 1rem 0;
+    }
+    
+    .form-container form p {
+        padding-top: 1.5rem;
+        font-size: 2rem;
+        color: var(--black);
+    }
+    
+    .form-container form p a {
+        color: var(--purple);
+    }
+    
+    .form-container form p a:hover {
+        text-decoration: underline;
+    }
+    
+    .tab {
+        
+        background-color: #f1f1f1;
+        text-align: center;
+        margin-top: 20vh;
+        /* display: inline-flex; */
+        /* padding-right: 5vh; */
+        width: 50rem;
+        margin-left: 140px;
+        margin-right: 100px;
+        justify-items: center;
+        align-items: center;
+        border-radius: .5rem;
+        box-shadow : 5px 5px 5px 2px #c11c69 ;
+    }
+    .tablinks{
+        cursor: pointer;
+    
+        
+      }
+     
+    
+    .tab button {
+        /* background-color: inherit; */
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        margin-left: 9rem;
+    }    
+    
+    .tab button:hover {
+        background-color: #D9CED6;
+        transition: 0.5s;
+        font-size: 2em;
+        
+    }
+    
+    .tab button:active {
+        background-color: #ccc;
+    }
+    
+    .tablinks.active{
+        background-color: #8e44ad;
+    }
+    
+    body {
+        display: inline-block;
+        background-image: url("https://i0.wp.com/www.myberryforest.com/wp-content/uploads/2017/06/Magical-Fruit-Mocktails.jpg?ssl=1");
+        background-repeat: no-repeat;
+        background-attachment: fixed ;
+        background-size: cover;
+        /* background-image: url() ; */
+    }
+
+  }

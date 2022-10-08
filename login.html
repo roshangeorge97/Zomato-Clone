@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Login Form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body class="body-login">
+	<div class="center">
+		<h1>Login</h1>
+		<form method="post">
+			<div class="txt_field">
+				<input type="email" required placeholder=" "/>
+				<label>Email-Id</label>
+			</div>
+			<div class="txt_field">
+				<input type="password" required placeholder=" "/>
+				<label>Enter OTP</label>
+			</div>
+			<input type="submit" value="Send OTP" required>
+			<div class="pass">Didn't Recieve OTP ?</div>
+			<div class="signup_link">
+				Not a member? <a href="registration.html">Signup</a>
+			</div>
+			<script src="sweetalert.min.js"></script>
+			<script type="text/javascript">
+				function validation()
+				{
+					var username = 'anggariskys';
+					var password = '12345a';
+
+					var userName = document.getElementById('username').value;
+					var passWord = document.getElementById('password').value;
+
+					if(( username == userName) && (password == passWord)) {
+						swal("Good job!", "Your success to login", "success");
+					}
+					else{
+						sweetAlert("Oops...", "Username or Password was wrong!", "error");
+					}
+
+				}
+			</script>
+
+		</form>
+	</div>
+</body>

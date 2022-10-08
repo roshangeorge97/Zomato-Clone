@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <script src="./assets/javascript/script-1.js"></script>
+    <script src="https://kit.fontawesome.com/bd474b0534.js" crossorigin="anonymous"></script>
+    <title>District Food Zone</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div>
+            <a href="/"><img class="logo" src="./assets/images/wellnes (1).svg" alt="logo"></a>
+        </div>
+        <div class="navbar-right">
+            <nav>
+                <a href=""><button class="login-btn home">Home</button></a>
+                <a href=""><button class="login-btn">Login</button></a>
+                <a href="./restaurantregisterPage.html"><button class="create-btn">Create Account</button></a>
+            </nav>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+                $('.navbar-right').click(function(){
+                    $('.navbar-right').toggleClass('active');
+                    $('nav').toggleClass('active');
+                })
+            })
+        </script>
+
+    </div>
+    </div>
+    </div>
+    <div class="navbar-bottom">
+        <div class="register_restaurant">
+            <h1>Register your Resturant on District Food </h2>
+                <h4>for free and get more customers!</h4>
+        </div>
+        <div class="register_btn">
+            <a href="./restaurantregisterPage.html"><button class="btn btn-1">Register your restaurant</button></a>
+            <button class="btn btn-2" src="#">Restaurant already listed? Login now</button>
+        </div>
+    </div>
+
+    <div class="partner">
+        <h1 class="heading_partner">Why should you partner with District Food?</h1>
+        <h2 class="sub_partner">Food Zone enables you to get 60% more revenue, 10x new customers and boost your
+            brand<br>
+            visibility by providing insights to improve your business.</h2>
+    </div>
+
+    <div class="cards-container" id="flavoursContainer">
+        <div class="card">
+            <i class='fas fa-globe-asia fa-3x' style="color:hsl(229, 100%, 65%);"></i>
+            <div class="card-text">
+                <h1>1000+ Cities</h1>
+                <p>in India</p>
+            </div>
+        </div>
+        <div class="card">
+            <i class='fas fa-shop fa-3x' style="color:hsl(229, 100%, 65%);"></i>
+            <div class="card-text">
+                <h1>3 lakh+</h1>
+                <p>restaurant listings</p>
+            </div>
+        </div>
+        <div class="card">
+            <i class='fas fa-calendar-check fa-3x' style="color:hsl(229, 100%, 65%);"></i>
+            <div class="card-text">
+                <h1>5.0 crore+</h1>
+                <p>monthly orders</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- This Part is for Steps for Registering in our APP -->
+
+    <div class="steps">
+        <div>
+            <h1 class="How-text">How it works?</h1>
+        </div>
+        <div class="cards-container-2">
+            <div class="card-2">
+                <img class="doc" src="./assets/images/document.png">
+                <div class="card-text-2">
+                    <h1 class="card-text-all">Step 1</h1>
+                    <h4 class="card-text-all">Create your page on Food Zone</h3>
+                        <h3 class="card-text-all">Help users discover your place by creating a listing on Food Zone
+                    </h4>
+                </div>
+
+            </div>
+            <div class="card-2">
+                <img class="sco" src="./assets/images/scooter.png">
+                <div class="card-text-2">
+                    <h1 class="card-text-all">Step 2</h1>
+                    <h4 class="card-text-all">Register for online ordering</h3>
+                        <h3 class="card-text-all">And deliver orders to millions of customers with ease
+                    </h4>
+                </div>
+            </div>
+            <div class="card-2">
+                <img class="foo" src="./assets/images/food.png">
+                <div class="card-text-2">
+                    <h1 class="card-text-all">Step 3</h1>
+                    <h4 class="card-text-all">Start receiving orders online</h3>
+                        <h3 class="card-text-all">Manage orders on our partner app, web dashboard or API partners
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <h1 class="products-heading">Our Products</h1>
+        <div>
+            <div class="products-container">
+                <div class="products-card-2">
+                    <div class="card-text-2">
+                        <img class="online_img"
+                            src="https://cdn.pixabay.com/photo/2016/05/30/14/58/guy-1424911_960_720.png"
+                            style="height:100px;width:100px;" alt="">
+                        <h1 class="card-text-all">Listing</h1>
+
+                        <h3 class="card-text-all">A free app that allows you to manage your District Food Zone listing
+                            directly from
+                            your smartphone</h4>
+                    </div>
+                    <a class="but learn">Learn more<i class='fas fa-angle-right' style='font-size:14px'></i></a>
+
+                </div>
+                <div class="products-card-2">
+
+                    <div class="card-text-2">
+                        <img class="online_img"
+                            src="https://cdn.pixabay.com/photo/2020/05/25/08/40/food-delivery-5217579_960_720.png"
+                            style="height:100px;width:130px;" alt="">
+                        <h1 class="card-text-all">Online Ordering</h1>
+                        <h3 class="card-text-all">Start taking orders online from millions of users near you and deliver
+                            with District Food Zone...</h4>
+
+                    </div>
+                    <a class="but learn">Learn more<i class='fas fa-angle-right' style='font-size:14px'></i></a>
+                </div>
+                <div class="products-card-2">
+
+                    <div class="card-text-2">
+                        <img class="online_img"
+                            src="https://cdn.pixabay.com/photo/2020/06/29/10/55/pizza-5352320_960_720.png"
+                            style="height:130px;width:150px;" alt="">
+                        <h1 class="card-text-all">Pro</h1>
+
+                        <h3 class="card-text-all">Drive more users to dine-in at your place by partnering with District
+                            Food Zone’s
+                            loyalty program</h4>
+                    </div>
+                    <a class="but learn">Learn more<i class='fas fa-angle-right' style='font-size:14px'></i></a>
+                </div>
+                <div class="products-card-2">
+
+                    <div class="card-text-2">
+                        <img class="online_img"
+                            src="https://cdn.pixabay.com/photo/2017/05/29/09/48/social-media-marketing-2353347_960_720.png"
+                            style="height:130px;width:150px;" alt="">
+                        <h1 class="card-text-all">Advertise</h1>
+
+                        <h3 class="card-text-all">For every marketing dollar spent, District Food Zone returns over 8x
+                            the
+                            investment...</h4>
+                    </div>
+                    <a class="but learn">Learn more<i class='fas fa-angle-right' style='font-size:14px'></i></a>
+
+                </div>
+                <div class="products-card-2">
+
+                    <div class="card-text-2">
+                        <img class="online_img"
+                            src="https://cdn.pixabay.com/photo/2012/04/02/12/58/decorations-24424_960_720.png"
+                            style="height:130px;width:150px;" alt="">
+                        <h1 class="card-text-all">Events</h1>
+
+                        <h3 class="card-text-all">Partner with us for India’s grandest food & entertainment carnival -
+                            “Zomaland”...</h4>
+                    </div>
+                    <a class="but learn">Learn more<i class='fas fa-angle-right' style='font-size:14px'></i></a>
+
+                </div>
+                <div class="products-card-2">
+
+                    <div class="card-text-2">
+                        <img class="online_img"
+                            src="https://cdn.pixabay.com/photo/2012/04/13/01/51/hamburger-31775_960_720.png"
+                            style="height:130px;width:150px;" alt="">
+                        <h1 class="card-text-all">Hyperpure</h1>
+
+                        <h3 class="card-text-all">Supplies fresh and high quality ingredients to restaurant for serving
+                            delicious meals...</h4>
+                    </div>
+                    <a class="but learn">Learn more<i class='fas fa-angle-right' style='font-size:14px'></i></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="geton-container">
+        <div class="geton-text">
+            <h1>What do you get on sign-up</h1>
+            <h4>District Food Zone Partner Platform helps you take your business to new heights instantly with no hassle
+                and
+                100% transparency!</h4>
+        </div>
+    </div>
+
+    <div class="geton">
+        <div class="geton-container-left">
+            <div class="geton-items-container">
+                <div class="geton-item-gap">
+                    <div class="geton-item">
+                        <h1><i class="fas fa-1"></i> Restaurant Partner app</h1>
+                        <h4>Manage all your orders on your smartphone with our Android app</h4>
+                    </div>
+
+                    <div class="geton-item">
+                        <h1><i class="fas fa-2"></i> Restaurant Partner web dashboard</h1>
+                        <h4>Manage all your orders on your desktop or laptop</h4>
+                    </div>
+
+                    <div class="geton-item">
+                        <h1><i class="fas fa-3"></i> API integration</h1>
+                        <h4>Manage all your orders on your existing Point of Sale (POS) or third party software</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="geton-container-right"></div>
+        <div class="geton-right">
+            <img class="phone-img"
+                src="https://b.zmtcdn.com/merchant-onboarding/2b0ec3e91e16dfcae922f213fdf808f11600934847.png" alt="">
+            <img class="laptop-img"
+                src="https://b.zmtcdn.com/merchant-onboarding/a603975bb4aea5941c7c45bb3480be1c1600934866.png" alt="">
+            <img class="laptop-img"
+                src="https://b.zmtcdn.com/merchant-onboarding/e83523818f82dd8cefedf4e069424fae1600934891.png" alt="">
+        </div>
+    </div>
+
+    <div class="jouney_card">
+        <div class="products-card-3">
+            <h1 class="journey">Start your journey with District Food Zone</h1>
+            <h2 class="journey">Create your restaurant page and register for online ordering</h2>
+            <a href="./restaurantregisterPage.html"><button class="create-btn-2">Start Now<i class='fas fa-angle-right'
+                        style='font-size:14px;'></i></button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
